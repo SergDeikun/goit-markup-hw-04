@@ -71,6 +71,7 @@ body {
 
 .header-item:not(:last-child) {
     margin-right: 50px;
+    position: relative;
 }
 
 .header-logo {
@@ -100,7 +101,21 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    position: relative;
 }
+
+.current::after {
+    content: "";
+    height:4px;
+    width: 100%;
+    background-color: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
 
 .header-link:hover,
 .header-link:focus {
